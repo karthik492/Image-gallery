@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="img.css">
+</head>
+<body>
+    <div class="full" id="fullImgBox">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjmqZXr-8gRABuEjmvhP_OE8ySofq5cML5w&s" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+ 
+    <div class="container">
+       
+        <div class="images">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjmqZXr-8gRABuEjmvhP_OE8ySofq5cML5w&s"onclick="openImage(this.src)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_IcWdIReqHzjHMwSugPcsYJx0t9WvGf1krQ&s"onclick="openImage(this.src)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY46DxOK34b5ZCv1a1RGGxB2ov7ZzdrNXmrA&s"onclick="openImage(this.src)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxDtz4rDbgVVOMerCT0R2FLJ9uPte-mywdyg&s"onclick="openImage(this.src)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfr8GQJYXQcV2RPuSjxAdyJ-5jzNDVCFudeQ&s"onclick="openImage(this.src)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrczl3LlS0PiWjC7_rEE6SFgnfWR6OXfQFdg&s"onclick="openImage(this.src)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1hoxatm-fo_Az0o-ezw4gIdk8q3JVMs1gHw&s"onclick="openImage(this.src)"> 
+  <img src="https://i.pinimg.com/236x/53/96/19/5396196eb1ababe5957c7cafe2972530.jpg"onclick="openImage(this.src)"></div>
+           
+        </div>
+    </div>
+    <script>
+          var fullImgBox = document.getElementById("fullImgBox");
+          var fullImg = document.getElementById("fullImg");
+          function openImage(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+          }
+          function closeFullImg(){
+            fullImgBox.style.display = "none";
+          }
+    </script>
+</body>
+</html>
